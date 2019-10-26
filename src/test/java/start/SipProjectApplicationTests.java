@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import repos.UserForumRepository;
+import repos.repositories.UserForumRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

@@ -1,4 +1,4 @@
-package repos;
+package repos.entities;
 
 import java.util.Date;
 
@@ -13,7 +13,7 @@ import javax.persistence.Table;
 public class UserForum {
 	
 	@Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id_user;
 	
 	private String name;

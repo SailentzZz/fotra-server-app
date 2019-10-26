@@ -1,7 +1,8 @@
-package repos;
+package repos.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
+import repos.entities.UserForum;
 
 @Repository
 public interface UserForumRepository extends CrudRepository<UserForum, Integer> {
