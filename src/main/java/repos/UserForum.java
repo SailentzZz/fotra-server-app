@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity(name = "UserForum")
-@Table(name = "\"UserForum\"")
+@Table(name = "\"UserForum\"", schema = "public")
 public class UserForum {
 	
 	@Id
@@ -26,7 +26,8 @@ public class UserForum {
 	public UserForum() {
 	}
 	
-	public UserForum(String name, String login, String email, String password, Date reg_data, int karma) {
+	public UserForum(Integer id_user, String name, String login, String email, String password, Date reg_data, int karma) {
+		this.id_user = id_user;
 		this.name = name;
 		this.login = login;
 		this.email = email;
@@ -83,6 +84,12 @@ public class UserForum {
 	}
 	public void setKarma(int karma) {
 		this.karma = karma;
-	}	
+	}
+
+	@Override
+	public String toString() {
+		return "UserForum [id_user=" + id_user + ", name=" + name + ", login=" + login + ", email=" + email
+				+ ", password=" + password + ", reg_data=" + reg_data + ", karma=" + karma + "]";
+	}		
 	
 }
