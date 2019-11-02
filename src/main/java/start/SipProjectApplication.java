@@ -7,9 +7,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"controllers", "repos"})
-@EnableJpaRepositories(basePackages = "repos")
-@EntityScan("repos")
+@ComponentScan(basePackages = {"controllers", "database", "translation"})
+@EnableJpaRepositories(basePackages = "database")
+@EntityScan("database")
 public class SipProjectApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SipProjectApplication.class, args);

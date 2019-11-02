@@ -1,4 +1,4 @@
-package translation.models;
+package translation.jsonObject;
 
 import java.util.List;
 

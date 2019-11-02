@@ -2,8 +2,8 @@ package controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import repos.entities.UserForum;
-import repos.repositories.UserForumRepository;
+import database.entities.UserForum;
+import database.repositories.UserForumRepository;
 
 @RestController
 @RequestMapping(value = "/account")
