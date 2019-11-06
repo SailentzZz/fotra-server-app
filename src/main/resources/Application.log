@@ -81,3 +81,14 @@
 2019-11-06 14:10:48,800 INFO  - null null null null
 2019-11-06 14:16:46,445 INFO  - null cxzcz sdadsaf sfsdfsd
 2019-11-06 14:21:44,036 INFO  - 
+2019-11-06 14:24:09,756 INFO  - 
+2019-11-06 14:24:10,068 INFO  - UserForum [id_user=8, name=asdad, login=cxzcz, email=sfsdfsd, password=$2a$10$11sFDsTZZ9QShi48imiSVO/FoRc0fAR/Ruf2mtSydBUvX2ZbJI5Iu, reg_data=Wed Nov 06 14:24:09 MSK 2019, karma=0]
+2019-11-06 14:24:10,068 INFO  - asdad cxzcz sdadsaf sfsdfsd
+2019-11-06 14:24:39,472 INFO  - UserForum [id_user=8, name=asdad, login=cxzcz, email=sfsdfsd, password=$2a$10$11sFDsTZZ9QShi48imiSVO/FoRc0fAR/Ruf2mtSydBUvX2ZbJI5Iu, reg_data=2019-11-06 00:00:00.0, karma=0]
+2019-11-06 14:25:05,040 INFO  - USERNAME --- cxzcz PASSWORD --- sdadsaf
+2019-11-06 14:25:05,397 INFO  - USER --- UserForum [id_user=8, name=asdad, login=cxzcz, email=sfsdfsd, password=$2a$10$11sFDsTZZ9QShi48imiSVO/FoRc0fAR/Ruf2mtSydBUvX2ZbJI5Iu, reg_data=2019-11-06 00:00:00.0, karma=0]
+2019-11-06 14:25:05,530 INFO  - USERNAME --- cxzcz TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjeHpjeiIsInJvbGVzIjoiVVNFUiIsImlhdCI6MTU3MzAzOTUwNSwiZXhwIjoxNTczMDQzMTA1fQ.AL0rIJ8jV1UIIgKWGBOs2Lez2oAId3Hyvt4SsbaVucg
+2019-11-06 14:25:13,353 INFO  - USERNAME --- cxzcz PASSWORD --- sdadsaf124241
+2019-11-06 14:25:20,789 INFO  - USERNAME --- cxzcz PASSWORD --- sdadsaf
+2019-11-06 14:25:21,051 INFO  - USER --- UserForum [id_user=8, name=asdad, login=cxzcz, email=sfsdfsd, password=$2a$10$11sFDsTZZ9QShi48imiSVO/FoRc0fAR/Ruf2mtSydBUvX2ZbJI5Iu, reg_data=2019-11-06 00:00:00.0, karma=0]
+2019-11-06 14:25:21,052 INFO  - USERNAME --- cxzcz TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjeHpjeiIsInJvbGVzIjoiVVNFUiIsImlhdCI6MTU3MzAzOTUyMSwiZXhwIjoxNTczMDQzMTIxfQ.E5gBZNWQAEAMl200S5D-2BUep3DdkbygNp4bjrlfGmU
