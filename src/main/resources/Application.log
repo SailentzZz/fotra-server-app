@@ -92,3 +92,63 @@
 2019-11-06 14:25:20,789 INFO  - USERNAME --- cxzcz PASSWORD --- sdadsaf
 2019-11-06 14:25:21,051 INFO  - USER --- UserForum [id_user=8, name=asdad, login=cxzcz, email=sfsdfsd, password=$2a$10$11sFDsTZZ9QShi48imiSVO/FoRc0fAR/Ruf2mtSydBUvX2ZbJI5Iu, reg_data=2019-11-06 00:00:00.0, karma=0]
 2019-11-06 14:25:21,052 INFO  - USERNAME --- cxzcz TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjeHpjeiIsInJvbGVzIjoiVVNFUiIsImlhdCI6MTU3MzAzOTUyMSwiZXhwIjoxNTczMDQzMTIxfQ.E5gBZNWQAEAMl200S5D-2BUep3DdkbygNp4bjrlfGmU
+2019-11-06 20:18:44,117 INFO  - USERNAME --- sailentzzz PASSWORD --- test
+2019-11-06 20:18:44,609 INFO  - USER --- UserForum [id_user=7, name=sal, login=sailentzzz, email=misha_travin@mail.ru, password=$2a$04$iJ1EQR8e5fPHJ5KO6.JtxOZY..OfaaGIfhKzGun.kjH64Yr490qoq, reg_data=2019-11-05 00:00:00.0, karma=0]
+2019-11-06 20:18:44,742 INFO  - USERNAME --- sailentzzz TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWlsZW50enp6Iiwicm9sZXMiOiJVU0VSXG4iLCJpYXQiOjE1NzMwNjA3MjQsImV4cCI6MTU3MzA2NDMyNH0.wsnkm65Se3eSZjB5zdWIesH_GyAFtjNZ0q9JCoXTQuI
+2019-11-06 20:19:58,001 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 20:32:55,149 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 20:38:35,957 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 20:43:11,875 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 20:58:47,419 INFO  - USERNAME --- sailentzzz PASSWORD --- test
+2019-11-06 20:58:47,790 INFO  - USER --- UserForum [id_user=7, name=sal, login=sailentzzz, email=misha_travin@mail.ru, password=$2a$04$iJ1EQR8e5fPHJ5KO6.JtxOZY..OfaaGIfhKzGun.kjH64Yr490qoq, reg_data=2019-11-05 00:00:00.0, karma=0]
+2019-11-06 20:58:48,053 INFO  - USERNAME --- sailentzzz TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWlsZW50enp6Iiwicm9sZXMiOiJVU0VSXG4iLCJpYXQiOjE1NzMwNjMxMjcsImV4cCI6MTU3MzA2NjcyN30.POH4fkDmU_fnWYGxBAxKbxbq_WjwyG0UtobVOl_C0VQ
+2019-11-06 21:01:05,462 INFO  - USERNAME --- sailentzzz PASSWORD --- test
+2019-11-06 21:01:05,933 INFO  - USER --- UserForum [id_user=7, name=sal, login=sailentzzz, email=misha_travin@mail.ru, password=$2a$04$iJ1EQR8e5fPHJ5KO6.JtxOZY..OfaaGIfhKzGun.kjH64Yr490qoq, reg_data=2019-11-05 00:00:00.0, karma=0]
+2019-11-06 21:01:06,065 INFO  - USERNAME --- sailentzzz TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWlsZW50enp6Iiwicm9sZXMiOiJVU0VSXG4iLCJpYXQiOjE1NzMwNjMyNjUsImV4cCI6MTU3MzA2Njg2NX0.VB2cSlYxxlZibVDmw3L-LsKH9UrVMaj4Fy_SXFvYJc4
+2019-11-06 21:01:26,044 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 21:01:26,113 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 21:01:53,162 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 21:02:39,290 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 21:03:50,365 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 21:06:16,776 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 21:06:35,607 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 21:09:16,205 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 21:20:00,726 INFO  - USERNAME --- sailentzzz PASSWORD --- test
+2019-11-06 21:20:01,000 INFO  - USER --- UserForum [id_user=7, name=sal, login=sailentzzz, email=misha_travin@mail.ru, password=$2a$04$iJ1EQR8e5fPHJ5KO6.JtxOZY..OfaaGIfhKzGun.kjH64Yr490qoq, reg_data=2019-11-05 00:00:00.0, karma=0]
+2019-11-06 21:20:01,006 INFO  - USERNAME --- sailentzzz TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWlsZW50enp6Iiwicm9sZXMiOiJVU0VSXG4iLCJpYXQiOjE1NzMwNjQ0MDEsImV4cCI6MTU3MzA2ODAwMX0.0XxU3pFTrjOBY3SRyMZnGVJdMuYHYetGwOxVSUnRUKc
+2019-11-06 21:20:14,889 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 21:22:34,536 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 21:23:04,831 INFO  - IN getAuthentication - userdetails: sailentzzz
+2019-11-06 22:18:53,887 INFO  - USERNAME --- sailentzzz PASSWORD --- test
+2019-11-06 22:18:54,358 INFO  - USER --- UserForum [id_user=7, name=sal, login=sailentzzz, email=misha_travin@mail.ru, password=$2a$04$iJ1EQR8e5fPHJ5KO6.JtxOZY..OfaaGIfhKzGun.kjH64Yr490qoq, reg_data=2019-11-05 00:00:00.0, karma=0]
+2019-11-06 22:18:54,483 INFO  - USERNAME --- sailentzzz TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWlsZW50enp6Iiwicm9sZXMiOiJVU0VSXG4iLCJpYXQiOjE1NzMwNjc5MzQsImV4cCI6MTU3MzA3MTUzNH0.exUGYapBR8mov7LK5JYmMJl9OuXxexS1tYGDEZCfUqg
+2019-11-06 22:19:08,275 INFO  - USERNAME --- null PASSWORD --- sdadsaf
+2019-11-06 22:22:51,627 INFO  - asdad cxzcz sdadsaf sfsdfsd
+2019-11-06 22:22:51,841 INFO  - UserForum [id_user=8, name=asdad, login=cxzcz, email=sfsdfsd, password=$2a$10$11sFDsTZZ9QShi48imiSVO/FoRc0fAR/Ruf2mtSydBUvX2ZbJI5Iu, reg_data=2019-11-06 00:00:00.0, karma=0]
+2019-11-06 22:24:46,119 INFO  - trewj trewj asfaye misha_travin@mail.ru
+2019-11-06 22:24:47,804 INFO  - UserForum [id_user=7, name=sal, login=sailentzzz, email=misha_travin@mail.ru, password=$2a$04$iJ1EQR8e5fPHJ5KO6.JtxOZY..OfaaGIfhKzGun.kjH64Yr490qoq, reg_data=2019-11-05 00:00:00.0, karma=0]
+2019-11-06 22:27:37,443 INFO  - trewj trewj asfaye mishatravin99@gmail.com
+2019-11-06 22:27:37,568 INFO  - 
+2019-11-06 22:27:37,866 INFO  - UserForum [id_user=9, name=trewj, login=trewj, email=mishatravin99@gmail.com, password=$2a$10$LuihX7fEeMJr/vOqVnOlE.lTMvubVvcGufolM3YhmHnwQJ3CtEWYu, reg_data=Wed Nov 06 22:27:37 MSK 2019, karma=0]
+2019-11-06 22:27:38,994 INFO  - trewj trewj asfaye mishatravin99@gmail.com
+2019-11-06 23:44:43,871 INFO  - USERNAME --- sailentzzz PASSWORD --- test
+2019-11-06 23:44:44,337 INFO  - USER --- UserForum [id_user=7, name=sal, login=sailentzzz, email=misha_travin@mail.ru, password=$2a$04$iJ1EQR8e5fPHJ5KO6.JtxOZY..OfaaGIfhKzGun.kjH64Yr490qoq, reg_data=2019-11-05 00:00:00.0, karma=0]
+2019-11-06 23:44:44,471 INFO  - USERNAME --- sailentzzz TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWlsZW50enp6Iiwicm9sZXMiOiJVU0VSXG4iLCJpYXQiOjE1NzMwNzMwODQsImV4cCI6MTU3MzA3NjY4NH0.TzOWkXP9-9dkY7TP2YhSkPwKT6BO_Q3vSPL4x4EGRPk
+2019-11-07 00:39:56,000 INFO  - 2019-11-07 00:37:04.377
+2019-11-07 00:48:36,490 INFO  - 692113
+2019-11-07 00:49:28,864 INFO  - 12
+2019-11-07 01:20:47,366 INFO  - sdfsdfsdfs
+2019-11-07 01:23:04,269 INFO  - sdfsdfsdfs
+2019-11-07 01:24:13,166 INFO  - sdfsdfsdfs
+2019-11-07 01:27:07,604 INFO  - sdfsdfsdfs
+2019-11-07 01:31:42,597 INFO  - sdfsdfsdfs
+2019-11-07 01:33:04,024 INFO  - sdfsdfsdfs
+2019-11-07 01:43:39,379 INFO  - sdfsdfsdfs
+2019-11-07 01:48:50,774 INFO  - misha_travin@mail.ru
+2019-11-07 01:55:32,986 INFO  - dsadasfas
+2019-11-07 01:59:16,819 INFO  - dsadasfas
+2019-11-07 02:01:31,841 INFO  - dsadasfas
+2019-11-07 02:04:23,174 INFO  - 
+2019-11-07 02:04:44,290 INFO  - 
+2019-11-07 02:05:09,844 INFO  - misha_travin@mail.ru
+2019-11-07 02:05:42,781 INFO  - 

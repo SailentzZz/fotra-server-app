@@ -22,7 +22,7 @@ import com.fotra.security.jwt.JwtTokenProvider;
 import com.fotra.service.UserForumService;
 
 @RestController
-@RequestMapping(value = "/v1/auth/")
+@RequestMapping(value = "/perm/an/auth/")
 public class AuthController {
 
 	private static Logger logger = Logger.getLogger(AuthController.class);

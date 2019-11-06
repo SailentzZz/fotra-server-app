@@ -20,7 +20,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Appl
     private final JwtTokenProvider jwtTokenProvider;
 
     private static final String ADMIN_ENDPOINT = "/v1/admin/**";
-    private static final String LOGIN_ENDPOINT = "/**";
+    private static final String LOGIN_ENDPOINT = "/vi/auth/**";
+    private static final String ANON_ENDPOINT = "/perm/an/**";
 
     @Autowired
     public SecurityConfig(JwtTokenProvider jwtTokenProvider) {
@@ -43,6 +44,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Appl
 	                .authorizeRequests()
 	                .antMatchers(LOGIN_ENDPOINT).permitAll()
 	                .antMatchers(ADMIN_ENDPOINT).hasRole("ADMIN")
+	                .antMatchers(ANON_ENDPOINT).permitAll()
 	                .anyRequest().authenticated()
                 .and()
                 	.apply(new JwtConfigurer(jwtTokenProvider));

@@ -15,7 +15,7 @@ import com.fotra.translation.jsonObject.LangsInfo;
 import com.fotra.translation.jsonObject.TranslResult;
 
 @RestController
-@RequestMapping(value = "api")
+@RequestMapping(value = "/perm/an/api")
 public class TranslationController {
 
     private Translate yandexTranslate;

@@ -15,7 +15,7 @@ import com.fotra.database.entities.UserForum;
 import com.fotra.service.UserForumService;
 
 @RestController
-@RequestMapping(value = "/acc/")
+@RequestMapping(value = "/perm/an/acc/")
 public class AccountContdoller {
 
 	private static Logger logger = Logger.getLogger(AccountContdoller.class);
@@ -26,9 +26,8 @@ public class AccountContdoller {
     @PostMapping("user")
     public ResponseEntity addUser(@RequestBody UserForum user) {
     	String param = user.getName() + " " + user.getLogin() + " " + user.getPassword() + " " + user.getEmail();
-    	
-    	Map<Object, Object> response = new HashMap<>();
-        
+    	logger.info(param);
+    	Map<Object, Object> response = new HashMap<>();        
         
         if (userForumService.saveUserForum(user.getName(), user.getLogin(), user.getPassword(), user.getEmail())) {
         	response.put("param", param);
