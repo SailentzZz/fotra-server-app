@@ -152,3 +152,7 @@
 2019-11-07 02:04:44,290 INFO  - 
 2019-11-07 02:05:09,844 INFO  - misha_travin@mail.ru
 2019-11-07 02:05:42,781 INFO  - 
+2019-11-07 02:52:07,691 INFO  - USERNAME --- sailentzzz PASSWORD --- test
+2019-11-07 02:52:18,462 INFO  - USERNAME --- sailentzzz PASSWORD --- testing
+2019-11-07 02:52:18,866 INFO  - USER --- UserForum [id_user=7, name=sal, login=sailentzzz, email=misha_travin@mail.ru, password=$2a$10$CueXqrvxcWuXvCkrNfl6S.O7pkEc55YDyC106ezn1vKsFGUoTyyhG, reg_data=2019-11-05 00:00:00.0, karma=0]
+2019-11-07 02:52:18,999 INFO  - USERNAME --- sailentzzz TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWlsZW50enp6Iiwicm9sZXMiOiJVU0VSXG4iLCJpYXQiOjE1NzMwODQzMzgsImV4cCI6MTU3MzA4NzkzOH0.zb8PydK6T2WZ1FMYAhQdzUxxhFfN2FH1GaCBN58MDf0
