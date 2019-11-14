@@ -26,12 +26,6 @@ import com.fotra.security.jwt.JwtTokenProvider;
 import com.fotra.service.EmailService;
 import com.fotra.service.UserForumService;
 
-/**
- * REST controller user connected requestst.
- *
- * @author Eugene Suleimanov
- * @version 1.0
- */
 
 @RestController
 @RequestMapping(value = "/perm/an/reset/")
