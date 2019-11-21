@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.codehaus.jackson.annotate.JsonProperty;
+
 @Entity
 @Table(name = "\"ResetPassword\"", schema = "public")
 public class PasswordReset {
@@ -17,6 +19,7 @@ public class PasswordReset {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id_password;
 	
+	@JsonProperty("token")
     private String token;
 
     private int user_var;

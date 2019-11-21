@@ -26,18 +26,11 @@ import com.fotra.security.jwt.JwtTokenProvider;
 import com.fotra.service.EmailService;
 import com.fotra.service.UserForumService;
 
-/**
- * REST controller user connected requestst.
- *
- * @author Eugene Suleimanov
- * @version 1.0
- */
-
 @RestController
 @RequestMapping(value = "/perm/an/reset/")
-public class UserRestControllerV1 {
+public class UserRestController {
 	
-	private static Logger logger = Logger.getLogger(UserRestControllerV1.class);
+	private static Logger logger = Logger.getLogger(UserRestController.class);
 	
     private final UserForumService userService;
     private final UserForumRepository userRepo;
@@ -47,7 +40,7 @@ public class UserRestControllerV1 {
     
 
     @Autowired
-    public UserRestControllerV1(UserForumService userService, 
+    public UserRestController(UserForumService userService, 
     		JwtTokenProvider jwtTokenProvider, 
     		UserForumRepository userRepo, 
     		PasswordResetRepository passRepo,

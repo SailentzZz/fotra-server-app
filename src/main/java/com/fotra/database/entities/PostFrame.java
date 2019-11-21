@@ -22,12 +22,23 @@ public class PostFrame {
     private Integer likes;
     private Integer comments;
     private Boolean open_close;
-    private Integer topic_var;
+    private String topic_var;
 
     public PostFrame() {
     }
-    public PostFrame(Integer id_post, Integer autor, String head, String body, Date date, Integer likes, Integer comments, Boolean open_close, Integer topic_var) {
+    public PostFrame(Integer id_post, Integer autor, String head, String body, Date date, Integer likes, Integer comments, Boolean open_close, String topic_var) {
         this.id_post = id_post;
+        this.autor = autor;
+        this.head = head;
+        this.body = body;
+        this.date = date;
+        this.likes = likes;
+        this.comments = comments;
+        this.open_close = open_close;
+        this.topic_var = topic_var;
+    }
+    
+    public PostFrame(Integer autor, String head, String body, Date date, Integer likes, Integer comments, Boolean open_close, String topic_var) {
         this.autor = autor;
         this.head = head;
         this.body = body;
@@ -94,10 +105,10 @@ public class PostFrame {
         this.open_close = open_close;
     }
 
-    public Integer getTopic_var() {
+    public String getTopic_var() {
         return topic_var;
     }
-    public void setTopic_var(Integer topic_var) {
+    public void setTopic_var(String topic_var) {
         this.topic_var = topic_var;
     }
 

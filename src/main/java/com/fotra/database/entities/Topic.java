@@ -1,5 +1,6 @@
 package com.fotra.database.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,7 +13,8 @@ public class Topic {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id_topic;
+    @Column(name = "id_topic")
+    private String id_topic;
 
     private String head;
     private String description;
@@ -20,17 +22,17 @@ public class Topic {
 
     public Topic() {
     }
-    public Topic(Integer id_topic, String head, String description, String language) {
+    public Topic(String id_topic, String head, String description, String language) {
         this.id_topic = id_topic;
         this.head = head;
         this.description = description;
         this.language = language;
     }
 
-    public Integer getId_topic() {
+    public String getId_topic() {
         return id_topic;
     }
-    public void setId_topic(Integer id_topic) {
+    public void setId_topic(String id_topic) {
         this.id_topic = id_topic;
     }
 
