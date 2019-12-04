@@ -15,13 +15,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fotra.database.entities.PasswordReset;
 import com.fotra.database.entities.UserForum;
 import com.fotra.database.repositories.PasswordResetRepository;
+import com.fotra.database.repositories.PostForumRepository;
+import com.fotra.database.repositories.PostForumRepository.PostFrameReqDtoRepo;
 import com.fotra.database.repositories.UserForumRepository;
 import com.fotra.dto.PasswordForgotDto;
+import com.fotra.dto.UserDto;
 import com.fotra.security.jwt.JwtTokenProvider;
 import com.fotra.service.EmailService;
 import com.fotra.service.UserForumService;
@@ -37,15 +41,18 @@ public class UserRestController {
     private final JwtTokenProvider jwtTokenProvider;
     private final PasswordResetRepository passRepo;
     private final EmailService emailService;
+    private final PostForumRepository postService;
     
 
     @Autowired
     public UserRestController(UserForumService userService, 
     		JwtTokenProvider jwtTokenProvider, 
     		UserForumRepository userRepo, 
+    		PostForumRepository postService,
     		PasswordResetRepository passRepo,
     		EmailService emailService) {
     	
+    	this.postService = postService;
         this.userService = userService;
         this.jwtTokenProvider = jwtTokenProvider;
         this.userRepo = userRepo;
@@ -54,11 +61,18 @@ public class UserRestController {
     }
 
     @GetMapping(value = "user")
-    public ResponseEntity<String> getUserById(HttpServletRequest req){
+    public ResponseEntity<String> getUserById(){
 //    	String token = jwtTokenProvider.resolveToken(req);
 //    	String username = jwtTokenProvider.getUsername(token);
 
         return new ResponseEntity<>("username", HttpStatus.OK);
+    }
+    
+    @ResponseBody
+    @GetMapping(value = "userposts")
+    public Iterable<PostFrameReqDtoRepo> getUserPosts(@RequestBody UserDto user){
+
+    	return postService.findAllPostsWithUser(user.getId());
     }
     
     @PostMapping(value = "invalid")

@@ -238,3 +238,20 @@
 2019-11-21 04:02:21,014 INFO  - IN addPostForum METHOD
 2019-11-21 04:02:21,272 INFO  - Topic{id_topic=en, head='English Topic', description='Topic for English posts', language='English'}
 2019-11-21 04:03:54,483 INFO  - IN getAuthentication - userdetails: user
+2019-12-05 01:30:58,007 INFO  - USERNAME --- user PASSWORD --- test
+2019-12-05 01:30:58,705 INFO  - USER --- UserForum [id_user=21, name=user, login=user, email=politovalexandr115@gmail.com, password=$2a$10$uXsrU71r6k1cjDohfHj2TeyfmOgmi22q7FVvoqfN6QCz.v3ddhZSa, reg_data=2019-11-07 00:00:00.0, karma=0]
+2019-12-05 01:30:58,894 INFO  - USERNAME --- user TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwicm9sZXMiOiJVU0VSIiwiaWF0IjoxNTc1NDk4NjU4LCJleHAiOjE1NzU1MDIyNTh9.o6N-WLfXNe-O15UOTErdf48HxKMn1uhyMlJgJmuAs7M
+2019-12-05 01:31:14,713 INFO  - IN getAuthentication - userdetails: user
+2019-12-05 01:31:14,929 INFO  - IN getAuthentication - userdetails: user
+2019-12-05 01:35:14,723 INFO  - IN getAuthentication - userdetails: user
+2019-12-05 01:35:14,858 INFO  - IN getAuthentication - userdetails: user
+2019-12-05 01:36:09,970 INFO  - IN getAuthentication - userdetails: user
+2019-12-05 01:37:22,410 INFO  - IN getAuthentication - userdetails: user
+2019-12-05 01:39:33,522 INFO  - IN getAuthentication - userdetails: user
+2019-12-05 01:41:38,444 INFO  - USERNAME --- user PASSWORD --- test
+2019-12-05 01:41:38,915 INFO  - USER --- UserForum [id_user=21, name=user, login=user, email=politovalexandr115@gmail.com, password=$2a$10$uXsrU71r6k1cjDohfHj2TeyfmOgmi22q7FVvoqfN6QCz.v3ddhZSa, reg_data=2019-11-07 00:00:00.0, karma=0]
+2019-12-05 01:41:38,917 INFO  - USERNAME --- user TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwicm9sZXMiOiJVU0VSIiwiaWF0IjoxNTc1NDk5Mjk4LCJleHAiOjE1NzU1MDI4OTh9.BsNw3b_5nOBqQRnUipk6DjzbPwiVYciza9x-cLfIaak
+2019-12-05 01:43:29,300 INFO  - USERNAME --- user PASSWORD --- test
+2019-12-05 01:43:29,790 INFO  - USER --- UserForum [id_user=21, name=user, login=user, email=politovalexandr115@gmail.com, password=$2a$10$uXsrU71r6k1cjDohfHj2TeyfmOgmi22q7FVvoqfN6QCz.v3ddhZSa, reg_data=2019-11-07 00:00:00.0, karma=0]
+2019-12-05 01:43:29,791 INFO  - USERNAME --- user TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwicm9sZXMiOiJVU0VSIiwiaWF0IjoxNTc1NDk5NDA5LCJleHAiOjE1NzU1MDMwMDl9.8n4immjaeZ4Q1ojhRFlHx6SNkyl0WAvnAt1nmw1hG8I
+2019-12-05 01:55:31,676 INFO  - IN getAuthentication - userdetails: user

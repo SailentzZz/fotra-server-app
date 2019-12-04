@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fotra.database.repositories.PostForumRepository.PostFrameReqDtoRepo;
 import com.fotra.dto.PostDto;
+import com.fotra.dto.TicketPostDto;
+import com.fotra.dto.UserDto;
 import com.fotra.service.PostForumSevice;
 
 @RestController
@@ -30,6 +32,19 @@ public class ForumController {
     public Iterable<PostFrameReqDtoRepo> getPosts() {
         return postForumSevice.getPosts();
     }
+	
+	@ResponseBody
+    @GetMapping("ticketposts")
+    public Iterable<PostFrameReqDtoRepo> getPostsTicket(@RequestBody TicketPostDto lang) {
+        return postForumSevice.getPostsTicket(lang.getLang());
+    }
+	
+    @ResponseBody
+    @GetMapping(value = "userposts")
+    public Iterable<PostFrameReqDtoRepo> getUserPosts(@RequestBody UserDto user){
+    	return postForumSevice.getPostsUser(user.getId());
+    }
+    
 	
     @PostMapping("addpost")
     public ResponseEntity addPost(@RequestBody PostDto postDto) {

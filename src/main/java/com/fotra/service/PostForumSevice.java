@@ -54,4 +54,14 @@ public class PostForumSevice {
 		Iterable<PostFrameReqDtoRepo> postFrame = postForumRepository.findAllPostsWithUser();
 		return postFrame;
 	}
+	
+	public Iterable<PostFrameReqDtoRepo> getPostsTicket(String lang) {
+		Iterable<PostFrameReqDtoRepo> postFrame = postForumRepository.findAllPostsWithTopic(lang);
+		return postFrame;
+	}
+	
+	public Iterable<PostFrameReqDtoRepo> getPostsUser(Integer id) {
+		Iterable<PostFrameReqDtoRepo> postFrame = postForumRepository.findAllPostsWithUser(id);
+		return postFrame;
+	}
 }
