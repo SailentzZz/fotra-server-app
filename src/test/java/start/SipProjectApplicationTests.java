@@ -1,5 +1,9 @@
 package start;
 
+import com.fotra.database.entities.Answer;
+import com.fotra.database.entities.PostAnswers;
+import com.fotra.database.repositories.AnswerPostRepo;
+import com.fotra.database.repositories.AnswerRepo;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,8 +13,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.fotra.SipProjectApplication;
-import com.fotra.database.repositories.PostForumRepository.PostFrameReqDtoRepo;
 import com.fotra.service.PostForumSevice;
+
+import java.util.Date;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = SipProjectApplication.class)
@@ -21,21 +26,25 @@ public class SipProjectApplicationTests {
 	
 	@Autowired
 	private PostForumSevice postForumService;
+
+//	@Autowired
+//	private AnswerService answerService;
+
+	@Autowired
+	private AnswerRepo answerRepo;
+
+	@Autowired
+	private AnswerPostRepo answerPostRepo;
 	
 	@Test
 	public void dAOtest() throws Exception {
 
-//		PasswordReset entity = new PasswordReset(1, "eqweqeq", 7, new Date());
-//		
-//		passwordResetRepository.save(entity);
-//		
-//		PasswordReset passwordReset = passwordResetRepository.findByToken("eqweqeq");
-//		long diff = new Date().getTime() - passwordReset.getExpiryDate().getTime();
-//		logger.info(diff / (60 * 1000) % 60); $2a$04$iJ1EQR8e5fPHJ5KO6.JtxOZY..OfaaGIfhKzGun.kjH64Yr490qoq
-		
-		//userForumService.setPasswordByEmail("testing", "misha_travin@mail.ru");
-		Iterable<PostFrameReqDtoRepo> iterable = postForumService.getPosts();
-		logger.info(iterable.iterator().next());
+		answerRepo.save(new Answer("jklsad", 21, new Date(), 0, 0, false));
+		Integer a = answerRepo.findFirstById_answer();
+
+		PostAnswers pa = new PostAnswers(1,54, a);
+		answerPostRepo.save(pa);
+		System.out.println(a.toString());
 	}
 	
 //	@Test

@@ -6,9 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity(name = "PostAnswer")
-@Table(name = "\"PostAnswer\"", schema = "public")
-public class PostAnswer {
+@Entity(name = "PostAnswers")
+@Table(name = "\"PostAnswers\"", schema = "public")
+public class PostAnswers {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id_post_answer;
@@ -16,10 +16,14 @@ public class PostAnswer {
     private Integer post_id_var;
     private Integer answer_id;
 
-    public PostAnswer() {
+    public PostAnswers() {
     }
-    public PostAnswer(Integer id_post_answer, Integer post_id_var, Integer answer_id) {
+    public PostAnswers(Integer id_post_answer, Integer post_id_var, Integer answer_id) {
         this.id_post_answer = id_post_answer;
+        this.post_id_var = post_id_var;
+        this.answer_id = answer_id;
+    }
+    public PostAnswers(Integer post_id_var, Integer answer_id) {
         this.post_id_var = post_id_var;
         this.answer_id = answer_id;
     }

@@ -34,6 +34,15 @@ public class Answer {
         this.accepted = accepted;
     }
 
+    public Answer(String body, Integer autor, Date date, Integer likes, Integer comments, Boolean accepted) {
+        this.body = body;
+        this.autor = autor;
+        this.date = date;
+        this.likes = likes;
+        this.comments = comments;
+        this.accepted = accepted;
+    }
+
     public Integer getId_answer() {
         return id_answer;
     }

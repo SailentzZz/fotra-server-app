@@ -255,3 +255,13 @@
 2019-12-05 01:43:29,790 INFO  - USER --- UserForum [id_user=21, name=user, login=user, email=politovalexandr115@gmail.com, password=$2a$10$uXsrU71r6k1cjDohfHj2TeyfmOgmi22q7FVvoqfN6QCz.v3ddhZSa, reg_data=2019-11-07 00:00:00.0, karma=0]
 2019-12-05 01:43:29,791 INFO  - USERNAME --- user TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwicm9sZXMiOiJVU0VSIiwiaWF0IjoxNTc1NDk5NDA5LCJleHAiOjE1NzU1MDMwMDl9.8n4immjaeZ4Q1ojhRFlHx6SNkyl0WAvnAt1nmw1hG8I
 2019-12-05 01:55:31,676 INFO  - IN getAuthentication - userdetails: user
+2019-12-09 23:52:00,792 INFO  - USERNAME --- user PASSWORD --- test
+2019-12-09 23:52:01,434 INFO  - USER --- UserForum [id_user=21, name=user, login=user, email=politovalexandr115@gmail.com, password=$2a$10$uXsrU71r6k1cjDohfHj2TeyfmOgmi22q7FVvoqfN6QCz.v3ddhZSa, reg_data=2019-11-07 00:00:00.0, karma=0]
+2019-12-09 23:52:01,612 INFO  - USERNAME --- user TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwicm9sZXMiOiJVU0VSIiwiaWF0IjoxNTc1OTI0NzIxLCJleHAiOjE1NzU5MjgzMjF9.TVbD7ubxvN6HK6nwEq5cYP9Bz3VSWnuCbEE3IprBcng
+2019-12-09 23:52:49,500 INFO  - IN getAuthentication - userdetails: user
+2019-12-09 23:54:50,612 INFO  - IN getAuthentication - userdetails: user
+2019-12-09 23:54:50,763 INFO  - IN getAuthentication - userdetails: user
+2019-12-09 23:55:02,356 INFO  - IN getAuthentication - userdetails: user
+2019-12-09 23:56:54,867 INFO  - IN getAuthentication - userdetails: user
+2019-12-09 23:57:17,864 INFO  - IN getAuthentication - userdetails: user
+2019-12-09 23:58:09,165 INFO  - IN getAuthentication - userdetails: user

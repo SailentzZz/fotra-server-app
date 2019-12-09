@@ -4,6 +4,10 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.fotra.database.entities.Answer;
+import com.fotra.database.repositories.AnswerPostRepo;
+import com.fotra.dto.AnswerDto;
+import com.fotra.service.AnswerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +27,9 @@ import com.fotra.service.PostForumSevice;
 @RestController
 @RequestMapping(value = "/v/auth/forum/")
 public class ForumController {
+
+    @Autowired
+    AnswerService answerService;
 
 	@Autowired
 	PostForumSevice postForumSevice;
@@ -48,15 +55,15 @@ public class ForumController {
 	
     @PostMapping("addpost")
     public ResponseEntity addPost(@RequestBody PostDto postDto) {
-    	
-    	if (postForumSevice.addPostForum(postDto.getUsername(), 
-    			postDto.getHead(), 
-    			postDto.getBody(), 
+
+    	if (postForumSevice.addPostForum(postDto.getUsername(),
+    			postDto.getHead(),
+    			postDto.getBody(),
     			new Date(), postDto.getLangID())) {
-    		
+
     		 Map<Object, Object> response = new HashMap<>();
              response.put("status", HttpStatus.OK);
-    		
+
     		return ResponseEntity.ok(response);
     	}
     	else {
@@ -66,4 +73,27 @@ public class ForumController {
     	}
     }
 
+    @PostMapping("addanswer")
+    public ResponseEntity addAnswer(@RequestBody AnswerDto answerDto) {
+
+        if (answerService.addAnswerToPost(new Answer(answerDto.getBody(),
+                answerDto.getAutor(), new Date(), 0, 0, false), answerDto.getId_post())) {
+
+            Map<Object, Object> response = new HashMap<>();
+            response.put("status", HttpStatus.OK);
+
+            return ResponseEntity.ok(response);
+        }
+        else {
+            Map<Object, Object> response = new HashMap<>();
+            response.put("status", HttpStatus.BAD_REQUEST);
+            return ResponseEntity.badRequest().body(response);
+        }
+    }
+
+    @ResponseBody
+    @PostMapping("getpostanswer")
+    public Iterable<AnswerPostRepo.PostAnswerReqDtoRepo> getAnswerPost(@RequestBody AnswerDto answerDto) {
+        return answerService.getAnswerPostFrame(answerDto.getId_post());
+    }
 }
