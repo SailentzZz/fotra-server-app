@@ -6,7 +6,7 @@ import java.util.Map;
 
 import com.fotra.database.entities.Answer;
 import com.fotra.database.repositories.AnswerPostRepo;
-import com.fotra.dto.AnswerDto;
+import com.fotra.dto.*;
 import com.fotra.service.AnswerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,9 +19,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fotra.database.repositories.PostForumRepository.PostFrameReqDtoRepo;
-import com.fotra.dto.PostDto;
-import com.fotra.dto.TicketPostDto;
-import com.fotra.dto.UserDto;
 import com.fotra.service.PostForumSevice;
 
 @RestController
@@ -95,5 +92,35 @@ public class ForumController {
     @PostMapping("getpostanswer")
     public Iterable<AnswerPostRepo.PostAnswerReqDtoRepo> getAnswerPost(@RequestBody AnswerDto answerDto) {
         return answerService.getAnswerPostFrame(answerDto.getId_post());
+    }
+
+    @PostMapping("closepost")
+    public ResponseEntity addOpenClose(@RequestBody OpenCloseDto openCloseDto) {
+        if (postForumSevice.UpdateStatement(openCloseDto.getId_post(), openCloseDto.isOpen_close())) {
+            Map<Object, Object> response = new HashMap<>();
+            response.put("status", HttpStatus.OK);
+
+            return ResponseEntity.ok(response);
+        } else {
+            Map<Object, Object> response = new HashMap<>();
+            response.put("status", HttpStatus.BAD_REQUEST);
+            return ResponseEntity.badRequest().body(response);
+        }
+    }
+
+    @PostMapping("closeanswer")
+    public ResponseEntity rightAnswerState(@RequestBody OpenCloseDto openCloseDto) {
+        if (answerService.updateAnswerState(openCloseDto.getId_post(), openCloseDto.isOpen_close())) {
+
+            System.out.println(openCloseDto.getId_post() + " " + openCloseDto.isOpen_close());
+            Map<Object, Object> response = new HashMap<>();
+            response.put("status", HttpStatus.OK);
+
+            return ResponseEntity.ok(response);
+        } else {
+            Map<Object, Object> response = new HashMap<>();
+            response.put("status", HttpStatus.BAD_REQUEST);
+            return ResponseEntity.badRequest().body(response);
+        }
     }
 }

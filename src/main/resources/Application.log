@@ -265,3 +265,24 @@
 2019-12-09 23:56:54,867 INFO  - IN getAuthentication - userdetails: user
 2019-12-09 23:57:17,864 INFO  - IN getAuthentication - userdetails: user
 2019-12-09 23:58:09,165 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 17:22:29,856 INFO  - USERNAME --- user PASSWORD --- test
+2019-12-10 17:22:30,510 INFO  - USER --- UserForum [id_user=21, name=user, login=user, email=politovalexandr115@gmail.com, password=$2a$10$uXsrU71r6k1cjDohfHj2TeyfmOgmi22q7FVvoqfN6QCz.v3ddhZSa, reg_data=2019-11-07 00:00:00.0, karma=0]
+2019-12-10 17:22:30,673 INFO  - USERNAME --- user TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwicm9sZXMiOiJVU0VSIiwiaWF0IjoxNTc1OTg3NzUwLCJleHAiOjE1NzU5OTEzNTB9.qcnUucv-dinkRthOeYezudivtrZE80W0xO1W0XlX3EY
+2019-12-10 17:23:51,062 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 17:24:13,235 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 17:26:18,133 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 17:26:40,467 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 17:27:36,316 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 17:29:29,976 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 17:34:30,421 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 17:37:21,636 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 17:37:22,037 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 18:25:04,709 INFO  - USERNAME --- user PASSWORD --- test
+2019-12-10 18:25:05,311 INFO  - USER --- UserForum [id_user=21, name=user, login=user, email=politovalexandr115@gmail.com, password=$2a$10$uXsrU71r6k1cjDohfHj2TeyfmOgmi22q7FVvoqfN6QCz.v3ddhZSa, reg_data=2019-11-07 00:00:00.0, karma=0]
+2019-12-10 18:25:05,328 INFO  - USERNAME --- user TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwicm9sZXMiOiJVU0VSIiwiaWF0IjoxNTc1OTkxNTA1LCJleHAiOjE1NzU5OTUxMDV9.L5Fo04xH9PotqeV5prQhjZGRnIGbfheBLaJFLFW5l4w
+2019-12-10 18:25:32,059 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 18:25:49,295 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 18:26:06,274 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 18:27:16,750 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 18:31:00,803 INFO  - IN getAuthentication - userdetails: user
+2019-12-10 18:31:27,057 INFO  - IN getAuthentication - userdetails: user

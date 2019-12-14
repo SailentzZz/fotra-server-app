@@ -40,4 +40,13 @@ public class AnswerService {
             return null;
         }
     }
+
+    public boolean updateAnswerState(Integer id, boolean open) {
+        try {
+            answerRepo.updateAnswerState(open, id);
+            return true;
+        } catch (RuntimeException e) {
+            return false;
+        }
+    }
 }

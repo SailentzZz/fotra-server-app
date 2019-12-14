@@ -16,9 +16,9 @@ import com.fotra.service.UserForumService;
 
 @RestController
 @RequestMapping(value = "/perm/an/acc/")
-public class AccountContdoller {
+public class AccountController {
 
-	private static Logger logger = Logger.getLogger(AccountContdoller.class);
+	private static Logger logger = Logger.getLogger(AccountController.class);
 	
     @Autowired
     private UserForumService userForumService;

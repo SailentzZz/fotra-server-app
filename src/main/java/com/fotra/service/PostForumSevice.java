@@ -64,4 +64,13 @@ public class PostForumSevice {
 		Iterable<PostFrameReqDtoRepo> postFrame = postForumRepository.findAllPostsWithUser(id);
 		return postFrame;
 	}
+
+	public boolean UpdateStatement(Integer id, boolean open) {
+		try {
+			postForumRepository.closeOrOpenPost(id, open);
+			return true;
+		} catch (RuntimeException e) {
+			return false;
+		}
+	}
 }

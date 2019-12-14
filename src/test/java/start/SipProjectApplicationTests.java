@@ -38,13 +38,7 @@ public class SipProjectApplicationTests {
 	
 	@Test
 	public void dAOtest() throws Exception {
-
-		answerRepo.save(new Answer("jklsad", 21, new Date(), 0, 0, false));
-		Integer a = answerRepo.findFirstById_answer();
-
-		PostAnswers pa = new PostAnswers(1,54, a);
-		answerPostRepo.save(pa);
-		System.out.println(a.toString());
+		postForumService.UpdateStatement(55, true);
 	}
 	
 //	@Test
