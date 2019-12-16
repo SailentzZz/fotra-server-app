@@ -123,4 +123,36 @@ public class ForumController {
             return ResponseEntity.badRequest().body(response);
         }
     }
+
+    @PostMapping("likepost")
+    public ResponseEntity likePost(@RequestBody LikePost likePost) {
+        if (postForumSevice.setLikePost(likePost.getId_post(), likePost.getId_user())) {
+
+            System.out.println(likePost.getId_post() + " " + likePost.getId_user());
+            Map<Object, Object> response = new HashMap<>();
+            response.put("status", HttpStatus.OK);
+
+            return ResponseEntity.ok(response);
+        } else {
+            Map<Object, Object> response = new HashMap<>();
+            response.put("status", HttpStatus.BAD_REQUEST);
+            return ResponseEntity.badRequest().body(response);
+        }
+    }
+
+    @PostMapping("likeanswer")
+    public ResponseEntity likePost(@RequestBody LikeAnswerDto likeAnswerDto) {
+        if (answerService.setLikeAnswer(likeAnswerDto.getId_answer(), likeAnswerDto.getId_user())) {
+
+            System.out.println(likeAnswerDto.getId_answer() + " " + likeAnswerDto.getId_user());
+            Map<Object, Object> response = new HashMap<>();
+            response.put("status", HttpStatus.OK);
+
+            return ResponseEntity.ok(response);
+        } else {
+            Map<Object, Object> response = new HashMap<>();
+            response.put("status", HttpStatus.BAD_REQUEST);
+            return ResponseEntity.badRequest().body(response);
+        }
+    }
 }

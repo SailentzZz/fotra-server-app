@@ -286,3 +286,10 @@
 2019-12-10 18:27:16,750 INFO  - IN getAuthentication - userdetails: user
 2019-12-10 18:31:00,803 INFO  - IN getAuthentication - userdetails: user
 2019-12-10 18:31:27,057 INFO  - IN getAuthentication - userdetails: user
+2019-12-17 01:24:18,009 INFO  - USERNAME --- user PASSWORD --- test
+2019-12-17 01:24:18,847 INFO  - USER --- UserForum [id_user=21, name=user, login=user, email=politovalexandr115@gmail.com, password=$2a$10$uXsrU71r6k1cjDohfHj2TeyfmOgmi22q7FVvoqfN6QCz.v3ddhZSa, reg_data=2019-11-07 00:00:00.0, karma=0]
+2019-12-17 01:24:19,036 INFO  - USERNAME --- user TOKEN --- eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwicm9sZXMiOiJVU0VSIiwiaWF0IjoxNTc2NTM1MDU4LCJleHAiOjE1NzY1Mzg2NTh9.BcVNGvUad35rsbepgHBbXbonatY7Iv12jBsH9q99xIc
+2019-12-17 01:25:22,632 INFO  - IN getAuthentication - userdetails: user
+2019-12-17 01:25:31,686 INFO  - IN getAuthentication - userdetails: user
+2019-12-17 01:26:27,064 INFO  - IN getAuthentication - userdetails: user
+2019-12-17 01:26:35,069 INFO  - IN getAuthentication - userdetails: user

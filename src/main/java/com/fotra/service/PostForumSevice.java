@@ -2,6 +2,8 @@ package com.fotra.service;
 
 import java.util.Date;
 
+import com.fotra.database.entities.LikePost;
+import com.fotra.database.repositories.LikePostRepo;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,6 +29,9 @@ public class PostForumSevice {
 	
 	@Autowired
 	PostForumRepository postForumRepository;
+
+	@Autowired
+	LikePostRepo likePostRepo;
 	
 	public boolean addPostForum(String username, String head, String body, Date date, String langID) {
 		logger.info("IN addPostForum METHOD");
@@ -69,6 +74,25 @@ public class PostForumSevice {
 		try {
 			postForumRepository.closeOrOpenPost(id, open);
 			return true;
+		} catch (RuntimeException e) {
+			return false;
+		}
+	}
+
+	public boolean setLikePost(Integer id_post, Integer id_user) {
+		try {
+			LikePost likePost = null;
+			likePost = likePostRepo.findLikePostById_user_likeAndId_post_like(id_post, id_user);
+			if (likePost == null){
+				PostFrame postFrame = postForumRepository.findById(id_post).get();
+				postFrame.setLikes(postFrame.getLikes() + 1);
+				postForumRepository.save(postFrame);
+				LikePost tmp = new LikePost(id_user, id_post);
+				likePostRepo.save(tmp);
+				return true;
+			} else {
+				return false;
+			}
 		} catch (RuntimeException e) {
 			return false;
 		}

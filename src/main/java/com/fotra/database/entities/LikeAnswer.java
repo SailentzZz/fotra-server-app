@@ -23,6 +23,10 @@ public class LikeAnswer {
         this.id_user_like = id_user_like;
         this.id_answer_like = id_answer_like;
     }
+    public LikeAnswer(Integer id_user_like, Integer id_answer_like) {
+        this.id_user_like = id_user_like;
+        this.id_answer_like = id_answer_like;
+    }
 
     public Integer getId_like_answer() {
         return id_like_answer;

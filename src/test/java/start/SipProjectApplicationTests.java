@@ -4,6 +4,7 @@ import com.fotra.database.entities.Answer;
 import com.fotra.database.entities.PostAnswers;
 import com.fotra.database.repositories.AnswerPostRepo;
 import com.fotra.database.repositories.AnswerRepo;
+import com.fotra.service.AnswerService;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,21 +25,15 @@ public class SipProjectApplicationTests {
 	
 	private static Logger logger = Logger.getLogger(SipProjectApplicationTests.class);
 	
-	@Autowired
-	private PostForumSevice postForumService;
-
 //	@Autowired
-//	private AnswerService answerService;
+//	private PostForumSevice postForumService;
 
 	@Autowired
-	private AnswerRepo answerRepo;
-
-	@Autowired
-	private AnswerPostRepo answerPostRepo;
+	private AnswerService answerService;
 	
 	@Test
 	public void dAOtest() throws Exception {
-		postForumService.UpdateStatement(55, true);
+		answerService.setLikeAnswer(57, 21);
 	}
 	
 //	@Test

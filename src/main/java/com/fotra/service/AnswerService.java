@@ -1,9 +1,9 @@
 package com.fotra.service;
 
-import com.fotra.database.entities.Answer;
-import com.fotra.database.entities.PostAnswers;
+import com.fotra.database.entities.*;
 import com.fotra.database.repositories.AnswerPostRepo;
 import com.fotra.database.repositories.AnswerRepo;
+import com.fotra.database.repositories.LikeAnswerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +19,9 @@ public class AnswerService {
 
     @Autowired
     private AnswerPostRepo answerPostRepo;
+
+    @Autowired
+    private LikeAnswerRepo likeAnswerRepo;
 
     public boolean addAnswerToPost(Answer answer, Integer postId) {
         try {
@@ -45,6 +48,25 @@ public class AnswerService {
         try {
             answerRepo.updateAnswerState(open, id);
             return true;
+        } catch (RuntimeException e) {
+            return false;
+        }
+    }
+
+    public boolean setLikeAnswer(Integer id_answer, Integer id_user) {
+        try {
+            LikeAnswer likeAnswer = null;
+            likeAnswer = likeAnswerRepo.findLikePostById_user_likeAndId_post_like(id_answer, id_user);
+            if (likeAnswer == null){
+                Answer frame = answerRepo.findById(id_answer).get();
+                frame.setLikes(frame.getLikes() + 1);
+                answerRepo.save(frame);
+                LikeAnswer tmp = new LikeAnswer(id_user, id_answer);
+                likeAnswerRepo.save(tmp);
+                return true;
+            } else {
+                return false;
+            }
         } catch (RuntimeException e) {
             return false;
         }

@@ -23,6 +23,10 @@ public class LikePost {
         this.id_user_like = id_user_like;
         this.id_post_like = id_post_like;
     }
+    public LikePost(Integer id_user_like, Integer id_post_like) {
+        this.id_user_like = id_user_like;
+        this.id_post_like = id_post_like;
+    }
 
     public Integer getId_like_post() {
         return id_like_post;
